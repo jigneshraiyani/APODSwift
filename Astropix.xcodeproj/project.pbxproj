@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE34061B27D4904B009089DE /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE34061A27D4904B009089DE /* NetworkErrors.swift */; };
+		EE34062227D4CD95009089DE /* PodServie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE34062127D4CD95009089DE /* PodServie.swift */; };
+		EE34062627D4DA2F009089DE /* Service+Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE34062527D4DA2F009089DE /* Service+Constant.swift */; };
+		EE34062927D4E3A9009089DE /* PodRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE34062827D4E3A9009089DE /* PodRequest.swift */; };
+		EE34062B27D4E820009089DE /* PodApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE34062A27D4E820009089DE /* PodApi.swift */; };
+		EEB1A8D627D38AED00E8F4CB /* AstropixViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1A8D527D38AED00E8F4CB /* AstropixViewController+Extension.swift */; };
+		EED1929F27D352C7009651A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1929E27D352C7009651A8 /* AppDelegate.swift */; };
+		EED192A127D352C7009651A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED192A027D352C7009651A8 /* SceneDelegate.swift */; };
+		EED192A327D352C7009651A8 /* AstropixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED192A227D352C7009651A8 /* AstropixViewController.swift */; };
+		EED192A627D352C7009651A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED192A427D352C7009651A8 /* Main.storyboard */; };
+		EED192AB27D352CE009651A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED192AA27D352CE009651A8 /* Assets.xcassets */; };
+		EED192AE27D352CE009651A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED192AC27D352CE009651A8 /* LaunchScreen.storyboard */; };
+		EED192B927D352CE009651A8 /* AstropixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED192B827D352CE009651A8 /* AstropixTests.swift */; };
+		EED192C327D352CF009651A8 /* AstropixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED192C227D352CF009651A8 /* AstropixUITests.swift */; };
+		EED192C527D352CF009651A8 /* AstropixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED192C427D352CF009651A8 /* AstropixUITestsLaunchTests.swift */; };
+		EED192D827D360C2009651A8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED192D727D360C1009651A8 /* HTTPClient.swift */; };
+		EED192DB27D3618E009651A8 /* AstropixViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED192DA27D3618E009651A8 /* AstropixViewModel.swift */; };
+		EED192E227D36537009651A8 /* PodResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED192E127D36537009651A8 /* PodResponseData.swift */; };
+		EEDCBCEF27D371DB006ED923 /* AstropixViewModel+Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCBCEE27D371DB006ED923 /* AstropixViewModel+Constant.swift */; };
+		EEDCBCF227D373F0006ED923 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCBCF127D373F0006ED923 /* Date+Extension.swift */; };
+		EEDCBCF427D3743B006ED923 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCBCF327D3743B006ED923 /* DateFormatter+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EED192B527D352CE009651A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EED1929327D352C6009651A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EED1929A27D352C6009651A8;
+			remoteInfo = Astropix;
+		};
+		EED192BF27D352CE009651A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EED1929327D352C6009651A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EED1929A27D352C6009651A8;
+			remoteInfo = Astropix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE34061A27D4904B009089DE /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		EE34062127D4CD95009089DE /* PodServie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodServie.swift; sourceTree = "<group>"; };
+		EE34062527D4DA2F009089DE /* Service+Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+Constant.swift"; sourceTree = "<group>"; };
+		EE34062827D4E3A9009089DE /* PodRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodRequest.swift; sourceTree = "<group>"; };
+		EE34062A27D4E820009089DE /* PodApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodApi.swift; sourceTree = "<group>"; };
+		EEB1A8D527D38AED00E8F4CB /* AstropixViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstropixViewController+Extension.swift"; sourceTree = "<group>"; };
+		EED1929B27D352C6009651A8 /* Astropix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astropix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED1929E27D352C7009651A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EED192A027D352C7009651A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EED192A227D352C7009651A8 /* AstropixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstropixViewController.swift; sourceTree = "<group>"; };
+		EED192A527D352C7009651A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EED192AA27D352CE009651A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EED192AD27D352CE009651A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EED192AF27D352CE009651A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED192B427D352CE009651A8 /* AstropixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstropixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED192B827D352CE009651A8 /* AstropixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstropixTests.swift; sourceTree = "<group>"; };
+		EED192BE27D352CE009651A8 /* AstropixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstropixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED192C227D352CF009651A8 /* AstropixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstropixUITests.swift; sourceTree = "<group>"; };
+		EED192C427D352CF009651A8 /* AstropixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstropixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EED192D727D360C1009651A8 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		EED192DA27D3618E009651A8 /* AstropixViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstropixViewModel.swift; sourceTree = "<group>"; };
+		EED192E127D36537009651A8 /* PodResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodResponseData.swift; sourceTree = "<group>"; };
+		EEDCBCEE27D371DB006ED923 /* AstropixViewModel+Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstropixViewModel+Constant.swift"; sourceTree = "<group>"; };
+		EEDCBCF127D373F0006ED923 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		EEDCBCF327D3743B006ED923 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EED1929827D352C6009651A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED192B127D352CE009651A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED192BB27D352CE009651A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE34062027D4CD78009089DE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EE34062127D4CD95009089DE /* PodServie.swift */,
+				EE34062527D4DA2F009089DE /* Service+Constant.swift */,
+				EE34062A27D4E820009089DE /* PodApi.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EE34062727D4E38D009089DE /* PodRequest */ = {
+			isa = PBXGroup;
+			children = (
+				EE34062827D4E3A9009089DE /* PodRequest.swift */,
+			);
+			path = PodRequest;
+			sourceTree = "<group>";
+		};
+		EED1929227D352C6009651A8 = {
+			isa = PBXGroup;
+			children = (
+				EED1929D27D352C7009651A8 /* Astropix */,
+				EED192B727D352CE009651A8 /* AstropixTests */,
+				EED192C127D352CF009651A8 /* AstropixUITests */,
+				EED1929C27D352C6009651A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EED1929C27D352C6009651A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EED1929B27D352C6009651A8 /* Astropix.app */,
+				EED192B427D352CE009651A8 /* AstropixTests.xctest */,
+				EED192BE27D352CE009651A8 /* AstropixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EED1929D27D352C7009651A8 /* Astropix */ = {
+			isa = PBXGroup;
+			children = (
+				EE34062027D4CD78009089DE /* Service */,
+				EEDCBCF027D373C6006ED923 /* Extension */,
+				EED192DD27D364FD009651A8 /* Model */,
+				EED192DC27D361AA009651A8 /* View */,
+				EED192D927D36171009651A8 /* ViewModel */,
+				EED192D627D360A4009651A8 /* Network */,
+				EED1929E27D352C7009651A8 /* AppDelegate.swift */,
+				EED192A027D352C7009651A8 /* SceneDelegate.swift */,
+				EED192A427D352C7009651A8 /* Main.storyboard */,
+				EED192AA27D352CE009651A8 /* Assets.xcassets */,
+				EED192AC27D352CE009651A8 /* LaunchScreen.storyboard */,
+				EED192AF27D352CE009651A8 /* Info.plist */,
+			);
+			path = Astropix;
+			sourceTree = "<group>";
+		};
+		EED192B727D352CE009651A8 /* AstropixTests */ = {
+			isa = PBXGroup;
+			children = (
+				EED192B827D352CE009651A8 /* AstropixTests.swift */,
+			);
+			path = AstropixTests;
+			sourceTree = "<group>";
+		};
+		EED192C127D352CF009651A8 /* AstropixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EED192C227D352CF009651A8 /* AstropixUITests.swift */,
+				EED192C427D352CF009651A8 /* AstropixUITestsLaunchTests.swift */,
+			);
+			path = AstropixUITests;
+			sourceTree = "<group>";
+		};
+		EED192D627D360A4009651A8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EED192D727D360C1009651A8 /* HTTPClient.swift */,
+				EE34061A27D4904B009089DE /* NetworkErrors.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EED192D927D36171009651A8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EED192DA27D3618E009651A8 /* AstropixViewModel.swift */,
+				EEDCBCEE27D371DB006ED923 /* AstropixViewModel+Constant.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EED192DC27D361AA009651A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EED192A227D352C7009651A8 /* AstropixViewController.swift */,
+				EEB1A8D527D38AED00E8F4CB /* AstropixViewController+Extension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EED192DD27D364FD009651A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE34062727D4E38D009089DE /* PodRequest */,
+				EED192E027D3651D009651A8 /* Response */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EED192E027D3651D009651A8 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				EED192E127D36537009651A8 /* PodResponseData.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		EEDCBCF027D373C6006ED923 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EEDCBCF127D373F0006ED923 /* Date+Extension.swift */,
+				EEDCBCF327D3743B006ED923 /* DateFormatter+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EED1929A27D352C6009651A8 /* Astropix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED192C827D352CF009651A8 /* Build configuration list for PBXNativeTarget "Astropix" */;
+			buildPhases = (
+				EED1929727D352C6009651A8 /* Sources */,
+				EED1929827D352C6009651A8 /* Frameworks */,
+				EED1929927D352C6009651A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Astropix;
+			productName = Astropix;
+			productReference = EED1929B27D352C6009651A8 /* Astropix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EED192B327D352CE009651A8 /* AstropixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED192CB27D352CF009651A8 /* Build configuration list for PBXNativeTarget "AstropixTests" */;
+			buildPhases = (
+				EED192B027D352CE009651A8 /* Sources */,
+				EED192B127D352CE009651A8 /* Frameworks */,
+				EED192B227D352CE009651A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EED192B627D352CE009651A8 /* PBXTargetDependency */,
+			);
+			name = AstropixTests;
+			productName = AstropixTests;
+			productReference = EED192B427D352CE009651A8 /* AstropixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EED192BD27D352CE009651A8 /* AstropixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED192CE27D352CF009651A8 /* Build configuration list for PBXNativeTarget "AstropixUITests" */;
+			buildPhases = (
+				EED192BA27D352CE009651A8 /* Sources */,
+				EED192BB27D352CE009651A8 /* Frameworks */,
+				EED192BC27D352CE009651A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EED192C027D352CE009651A8 /* PBXTargetDependency */,
+			);
+			name = AstropixUITests;
+			productName = AstropixUITests;
+			productReference = EED192BE27D352CE009651A8 /* AstropixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EED1929327D352C6009651A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					EED1929A27D352C6009651A8 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					EED192B327D352CE009651A8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EED1929A27D352C6009651A8;
+					};
+					EED192BD27D352CE009651A8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EED1929A27D352C6009651A8;
+					};
+				};
+			};
+			buildConfigurationList = EED1929627D352C6009651A8 /* Build configuration list for PBXProject "Astropix" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EED1929227D352C6009651A8;
+			productRefGroup = EED1929C27D352C6009651A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EED1929A27D352C6009651A8 /* Astropix */,
+				EED192B327D352CE009651A8 /* AstropixTests */,
+				EED192BD27D352CE009651A8 /* AstropixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EED1929927D352C6009651A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED192AE27D352CE009651A8 /* LaunchScreen.storyboard in Resources */,
+				EED192AB27D352CE009651A8 /* Assets.xcassets in Resources */,
+				EED192A627D352C7009651A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED192B227D352CE009651A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED192BC27D352CE009651A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EED1929727D352C6009651A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE34061B27D4904B009089DE /* NetworkErrors.swift in Sources */,
+				EE34062627D4DA2F009089DE /* Service+Constant.swift in Sources */,
+				EED192DB27D3618E009651A8 /* AstropixViewModel.swift in Sources */,
+				EEDCBCEF27D371DB006ED923 /* AstropixViewModel+Constant.swift in Sources */,
+				EE34062927D4E3A9009089DE /* PodRequest.swift in Sources */,
+				EED192A327D352C7009651A8 /* AstropixViewController.swift in Sources */,
+				EED1929F27D352C7009651A8 /* AppDelegate.swift in Sources */,
+				EEDCBCF227D373F0006ED923 /* Date+Extension.swift in Sources */,
+				EED192E227D36537009651A8 /* PodResponseData.swift in Sources */,
+				EED192D827D360C2009651A8 /* HTTPClient.swift in Sources */,
+				EE34062227D4CD95009089DE /* PodServie.swift in Sources */,
+				EEB1A8D627D38AED00E8F4CB /* AstropixViewController+Extension.swift in Sources */,
+				EED192A127D352C7009651A8 /* SceneDelegate.swift in Sources */,
+				EE34062B27D4E820009089DE /* PodApi.swift in Sources */,
+				EEDCBCF427D3743B006ED923 /* DateFormatter+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED192B027D352CE009651A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED192B927D352CE009651A8 /* AstropixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED192BA27D352CE009651A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED192C527D352CF009651A8 /* AstropixUITestsLaunchTests.swift in Sources */,
+				EED192C327D352CF009651A8 /* AstropixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EED192B627D352CE009651A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EED1929A27D352C6009651A8 /* Astropix */;
+			targetProxy = EED192B527D352CE009651A8 /* PBXContainerItemProxy */;
+		};
+		EED192C027D352CE009651A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EED1929A27D352C6009651A8 /* Astropix */;
+			targetProxy = EED192BF27D352CE009651A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EED192A427D352C7009651A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED192A527D352C7009651A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EED192AC27D352CE009651A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED192AD27D352CE009651A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EED192C627D352CF009651A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EED192C727D352CF009651A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EED192C927D352CF009651A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Astropix/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Astropix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EED192CA27D352CF009651A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Astropix/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Astropix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EED192CC27D352CF009651A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AstropixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astropix.app/Astropix";
+			};
+			name = Debug;
+		};
+		EED192CD27D352CF009651A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AstropixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astropix.app/Astropix";
+			};
+			name = Release;
+		};
+		EED192CF27D352CF009651A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AstropixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astropix;
+			};
+			name = Debug;
+		};
+		EED192D027D352CF009651A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AstropixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astropix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EED1929627D352C6009651A8 /* Build configuration list for PBXProject "Astropix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED192C627D352CF009651A8 /* Debug */,
+				EED192C727D352CF009651A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED192C827D352CF009651A8 /* Build configuration list for PBXNativeTarget "Astropix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED192C927D352CF009651A8 /* Debug */,
+				EED192CA27D352CF009651A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED192CB27D352CF009651A8 /* Build configuration list for PBXNativeTarget "AstropixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED192CC27D352CF009651A8 /* Debug */,
+				EED192CD27D352CF009651A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED192CE27D352CF009651A8 /* Build configuration list for PBXNativeTarget "AstropixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED192CF27D352CF009651A8 /* Debug */,
+				EED192D027D352CF009651A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EED1929327D352C6009651A8 /* Project object */;
+}

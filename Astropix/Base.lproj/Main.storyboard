@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qOI-Ii-GJb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jgT-2a-bxp">
+            <objects>
+                <tabBarController id="qOI-Ii-GJb" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pLg-Ey-Oh0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QQh-Dg-a8b" kind="relationship" relationship="viewControllers" id="M8P-ct-btx"/>
+                        <segue destination="TBa-dZ-Yh4" kind="relationship" relationship="viewControllers" id="JDU-Nk-6ij"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5V0-kG-FhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="216"/>
+        </scene>
+        <!--APOD-->
+        <scene sceneID="hgn-Wk-5Uw">
+            <objects>
+                <navigationController id="QQh-Dg-a8b" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="APOD" image="info" catalog="system" id="q4o-6q-EFE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Hr-cJ-i1o">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="73z-Eb-PQX" kind="relationship" relationship="rootViewController" id="T8t-0M-pvk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fF-sX-4bC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="-165"/>
+        </scene>
+        <!--Astropix View Controller-->
+        <scene sceneID="yAF-x6-dfN">
+            <objects>
+                <viewController id="73z-Eb-PQX" customClass="AstropixViewController" customModule="Astropix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bQw-Pq-laU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5b-VM-ANC">
+                                <rect key="frame" x="10" y="90" width="394" height="313.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOC-fH-b2M">
+                                <rect key="frame" x="10" y="405.5" width="394" height="89.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SCB-jn-Mnv">
+                                <rect key="frame" x="10" y="497" width="394" height="311"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T52-fp-FHQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SCB-jn-Mnv" firstAttribute="top" secondItem="fOC-fH-b2M" secondAttribute="bottom" constant="2" id="0uX-9W-IFs"/>
+                            <constraint firstItem="SCB-jn-Mnv" firstAttribute="leading" secondItem="O5b-VM-ANC" secondAttribute="leading" id="26K-no-jWv"/>
+                            <constraint firstItem="T52-fp-FHQ" firstAttribute="bottom" secondItem="SCB-jn-Mnv" secondAttribute="bottom" constant="5" id="4oM-nW-O0k"/>
+                            <constraint firstItem="fOC-fH-b2M" firstAttribute="trailing" secondItem="O5b-VM-ANC" secondAttribute="trailing" id="HUF-OB-XJe"/>
+                            <constraint firstItem="O5b-VM-ANC" firstAttribute="top" secondItem="T52-fp-FHQ" secondAttribute="top" constant="2" id="IDg-T7-FIy"/>
+                            <constraint firstItem="fOC-fH-b2M" firstAttribute="top" secondItem="O5b-VM-ANC" secondAttribute="bottom" constant="2" id="Oxz-4C-6Sw"/>
+                            <constraint firstItem="SCB-jn-Mnv" firstAttribute="trailing" secondItem="O5b-VM-ANC" secondAttribute="trailing" id="UaT-rY-rkU"/>
+                            <constraint firstItem="T52-fp-FHQ" firstAttribute="trailing" secondItem="O5b-VM-ANC" secondAttribute="trailing" constant="10" id="VOM-6q-52S"/>
+                            <constraint firstItem="O5b-VM-ANC" firstAttribute="leading" secondItem="T52-fp-FHQ" secondAttribute="leading" constant="10" id="fFT-3g-zWD"/>
+                            <constraint firstItem="fOC-fH-b2M" firstAttribute="height" secondItem="bQw-Pq-laU" secondAttribute="height" multiplier="0.1" id="hHh-1V-4DJ"/>
+                            <constraint firstItem="fOC-fH-b2M" firstAttribute="leading" secondItem="O5b-VM-ANC" secondAttribute="leading" id="tEX-Og-UZF"/>
+                            <constraint firstItem="O5b-VM-ANC" firstAttribute="height" secondItem="bQw-Pq-laU" secondAttribute="height" multiplier="0.35" id="z5O-TW-zB3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8oH-Po-cSZ">
+                        <barButtonItem key="rightBarButtonItem" image="calendar" catalog="system" style="plain" id="QoT-if-8se">
+                            <connections>
+                                <action selector="didTapOnCalenderButton:" destination="73z-Eb-PQX" id="V3v-TL-5Yj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contextView" destination="SCB-jn-Mnv" id="Iaw-Jw-xH8"/>
+                        <outlet property="headerWebView" destination="O5b-VM-ANC" id="oyV-lv-Eh1"/>
+                        <outlet property="titleLabel" destination="fOC-fH-b2M" id="iBc-Kt-2oX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQp-dE-f6x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897.10144927536237" y="-157.36607142857142"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="IQV-b5-Xpy">
+            <objects>
+                <navigationController id="TBa-dZ-Yh4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="nEZ-cL-Bup"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zhp-sB-lVn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="I55-r0-Ie7" kind="relationship" relationship="rootViewController" id="cpp-HK-1E6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLz-OK-gew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="615"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="FHU-oS-NSE">
+            <objects>
+                <viewController id="I55-r0-Ie7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hjd-j0-8Sf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="y8L-Ac-jCI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="jXY-Cg-3Wh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pzq-b6-oCX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="623"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="info" catalog="system" width="93" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
